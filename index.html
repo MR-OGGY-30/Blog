@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow: hidden;
+            background-color: black;
+        }
+        #header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 80px;
+            width: 100vw; 
+            display: flex;
+            align-items: center;
+            color: white !important;
+        }
+        #header:hover {
+            background-color: grey;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #group-name {
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 30px;
+            text-align: left;
+            width: 150px;
+            font-size: 30px;
+        }
+        #video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -10;
+        }
+        #video video {
+            height: 100%;
+            width: 100%;
+        }
+        #link {
+            margin-left: 90px;
+        }
+        #link a{
+            color: white;
+            font-family: italic;
+            text-decoration: none;
+            color: rgb(225, 225, 225);
+            font-size: 20px;
+            padding: 20px;
+        }
+        #link a:hover {
+            text-decoration: underline;
+            background-color: grey;
+            color: white;
+            transform: scale(1.05);
+        }
+        #link #home{
+                color: white;
+                text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 id="group-name">Circuit Breakers</h1>
+        <div id="link">
+            <i><a href="index.html" id="home">Home</a></i>
+            <i><a href="content.html" id="blog">Blog</a></i>
+            <i><a href="link.html" id="link_1">Related Links</a></i>
+            <i><a href="about.html" id="about">About Us</a></i>
+        </div>
+    </div>
+    <div id="video">
+        <video src="video/Circuit breakers.mp4" autoplay loop></video>
+    </div>
+        
+</body>
+</html>
